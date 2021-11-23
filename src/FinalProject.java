@@ -19,6 +19,22 @@ public class FinalProject {
         }
 
         System.out.println("Access Granted");
+        System.out.println("Are you Hungry? Yes or No :");
+        String ans1 = scan.next();
+
+        if (ans1.equals("Yes")) {
+            System.out.println("Chose what you want to eat: Nasi Padang, Nasi Balap, or Sepat");
+            String ans2 = scan.next();
+
+            while
+            (!ans2.equals("Nasi Padang") && !ans2.equals("Nasi Balap") && !ans2.equals("Sepat")) {
+                System.out.println("Sorry we dont have it! What would you like between: Nasi Padang, Nasi Balap, and Sepat");
+                ans2 = scan.next();
+            }
+
+        } else {
+            System.out.println("Alright. Have a good day");
+        }
 
     }
 }

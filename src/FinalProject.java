@@ -63,11 +63,19 @@ public class FinalProject {
                     }
                     System.out.println("Thank You. Your order is in way.");
 
+                } else {
+                    System.out.println("You have ordered:" + ans2);
 
+
+                    System.out.println("Please confirm your password");
+                    pass = scan.next();
+
+                    while (!pass.equals(pass1)) {
+                        System.out.println("This is not the right password. please try again.");
+                        pass = scan.next();
+                    }
                 }
-
             }
-
 
         } else {
             System.out.println("Alright. Have a good day");

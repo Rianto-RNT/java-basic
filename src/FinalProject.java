@@ -32,6 +32,14 @@ public class FinalProject {
                 ans2 = scan.next();
             }
 
+            if (ans2.equals("Nasi Padang") || ans2.equals("Nasi Balap") || ans2.equals("Sepat")) {
+                System.out.println("do you want something to drink? Yes or No :");
+                String ans3 = scan.next();
+
+                while (!ans3.equals("Yes") && !ans3.equals("No")) ;
+            }
+
+
         } else {
             System.out.println("Alright. Have a good day");
         }
